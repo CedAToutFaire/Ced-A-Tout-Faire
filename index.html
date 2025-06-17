@@ -7,21 +7,24 @@
   <title>Ced A Tout Faire | Artisan à Rochefort</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background-color: #eff8f5; color: #333; }
-   header.full-banner {
-  padding: 0;
-  background-color: #329184;
-  text-align: center;
-}
-header.full-banner img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-    header h1 { margin: 0; font-size: 2rem; }
+    .banniere {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #329184;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+    .banniere img {
+      height: 80px;
+    }
+    .banniere h1 {
+      color: white;
+      font-size: 2rem;
+      margin: 0 auto;
+      text-align: center;
+      flex: 1;
+    }
     main { padding: 2rem 1rem; max-width: 1000px; margin: 0 auto; }
     section { margin-bottom: 2rem; padding: 1.5rem; border-radius: 8px; background-color: #d2ece6; }
     .photo-profil { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
@@ -37,9 +40,11 @@ header.full-banner img {
   </style>
 </head>
 <body>
- <header class="full-banner">
-  <img src="logo.png" alt="Ced A Tout Faire" />
-</header>
+  <header class="banniere">
+    <img src="logo.png" alt="Logo Ced A Tout Faire" />
+    <h1>Ced A Tout Faire</h1>
+  </header>
+
   <main>
     <section class="photo-profil">
       <img src="ta-photo.jpg" alt="Portrait Ced A Tout Faire" />
@@ -91,6 +96,7 @@ header.full-banner img {
       <p>Utilisez le formulaire intégré Wix pour vos demandes de devis</p>
     </section>
   </main>
+
   <footer>
     Ced A Tout Faire – SIREN 530 426 998 – Rochefort (17) <br />
     Mentions légales | Politique de confidentialité
